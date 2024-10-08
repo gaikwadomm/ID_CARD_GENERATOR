@@ -1,0 +1,95 @@
+/* Global styles */
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #f0f0f0;
+}
+
+.id-card-holder {
+    width: 300px;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.id-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 2px 0 #b9b9b9;
+}
+
+.id-card-header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+.id-card-header h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.id-card-body {
+    padding: 25px;
+}
+
+.id-card-body p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.photo {
+    max-width: 150px;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 10px auto;
+    border: 2px solid #b9b9b9;
+}
+
+.id-card-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+}
+
+.id-card-footer p {
+    font-size: 12px;
+    margin: 0;
+}
+
+/* Media queries for responsive design */
+@media only screen and (max-width: 768px) {
+    .id-card-holder {
+        width: 250px;
+    }
+    .id-card-body p {
+        font-size: 14px;
+    }
+    .photo {
+        max-width: 100px;
+        max-height: 100px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .id-card-holder {
+        width: 200px;
+    }
+    .id-card-body p {
+        font-size: 12px;
+    }
+    .photo {
+        max-width: 80px;
+        max-height: 80px;
+    }
+}
